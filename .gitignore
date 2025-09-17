@@ -1,0 +1,30 @@
+cat > .gitignore <<'EOF'
+# Dependencias
+/vendor/
+/node_modules/
+
+# Storage y symlink público
+public/storage
+storage/*.key
+storage/app/public
+storage/framework/*
+storage/logs/*
+
+# Entornos
+.env
+.env.*.local
+.env.local
+.env.backup
+.env.production
+
+# IDE / SO
+.idea/
+.vscode/
+.DS_Store
+
+# Logs de gestores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+EOF
